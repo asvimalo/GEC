@@ -1,11 +1,11 @@
-import { IArticle } from './../models/models';
+import { IArticle, Event, Project } from './../models/models';
 
 export const ARTICLES: IArticle[] = [
   {
       id: 11,
       title: 'Mr. Nice',
       description: '',
-      imageUrl: '',
+      imageUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
       content: '',
       dateCreated: Date.now(),
       isArquived: false,
@@ -116,3 +116,120 @@ export const ARTICLES: IArticle[] = [
     category: 'blog'
 }];
 
+export const EVENTS: Event[] = [
+    {
+        id: 11,
+        name: 'Jazzy Jazz',
+        description: '',
+        imageUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+        content: '',
+        dateStarted: Date.now(),
+        type: 'Jazz Concert',
+        category: 'concert'
+      },
+    {
+        id: 12,
+        name: 'Eco Market Gec',
+        description: '',
+        imageUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+        content: '',
+        dateStarted: Date.now(),
+        type: 'Eco Market',
+        category: 'market'
+    },
+    {
+        id: 13,
+        name: 'Cascais Limpo',
+        description: '',
+        imageUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+        content: '',
+        dateStarted: Date.now(),
+        type: 'recycle',
+        category: 'volunteer'
+    },
+    {
+        id: 14,
+        name: 'Os Reciclas',
+        description: '',
+        imageUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+        content: '',
+        dateStarted: Date.now(),
+        type: 'Hip Hop Concert',
+        category: 'concert'
+    },
+    {
+        id: 15,
+        name: 'Limpa a Praia',
+        description: '',
+        imageUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+        content: '',
+        dateStarted: Date.now(),
+        type: 'cleaning',
+        category: 'volunteer'
+    }];
+
+
+
+
+
+export const PROJECTS: Project[] = [
+    {
+        id: 15,
+        name: 'Cascais Vivo',
+        description: '',
+        imageUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+        content: '',
+        dateStarted: Date.now(),
+        type: 'education',
+        category: 'volunteer'
+      },
+    {
+        id: 16,
+        name: 'Ribeira Maya',
+        description: '',
+        imageUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+        content: '',
+        dateStarted: Date.now(),
+        type: 'cleaning',
+        category: 'volunteer'
+    },
+    {
+        id: 16,
+        name: 'Ribeira das Fontes',
+        description: '',
+        imageUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+        content: '',
+        dateStarted: Date.now(),
+        type: 'cleaning',
+        category: 'volunteer'
+    },
+    {
+        id: 17,
+        name: 'Car-Redux',
+        description: '',
+        imageUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+        content: '',
+        dateStarted: Date.now(),
+        type: 'movement',
+        category: 'volunteer'
+    },
+    {
+        id: 18,
+        name: 'Bosque de Sintra',
+        description: '',
+        imageUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+        content: '',
+        dateStarted: Date.now(),
+        type: 'plantar',
+        category: 'volunteer'
+    },
+    {
+        id: 19,
+        name: 'Serra Da Estrela - Fenix',
+        description: '',
+        imageUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+        content: '',
+        dateStarted: Date.now(),
+        type: 'reconstruct nature',
+        category: 'volunteer'
+}];

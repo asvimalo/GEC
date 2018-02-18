@@ -1,3 +1,22 @@
-<p>
-  news works!
-</p>
+<h2>News</h2>
+<ul>
+  <mat-card *ngFor="let new of news" class="example-card">
+    <a  routerLink="/news/{{new.id}}">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{new.title}}</mat-card-title>
+        <mat-card-subtitle>{{new?.subtitle}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{new.imageUrl}}" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          {{new.content}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="accent">LIKE</button>
+        <button mat-raised-button color="accent">SHARE</button>
+      </mat-card-actions>
+    </a>
+    </mat-card>
+</ul>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MaterialModule } from './../../../shared/material/material.module';
 import { IArticle } from './../../../shared/models/models';
-import { BlogService } from './../../../shared/services/blog.service';
+import { BlogService } from './../../../shared/services/blog/blog.service';
 
 @Component({
   selector: 'app-blogs-list',

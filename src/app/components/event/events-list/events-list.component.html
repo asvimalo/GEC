@@ -1,3 +1,22 @@
-<p>
-  events-list works!
-</p>
+<h2>Events</h2>
+<ul>
+  <mat-card *ngFor="let event of events" class="example-card">
+    <a  routerLink="/event/{{event.id}}">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{event.name}}</mat-card-title>
+        <mat-card-subtitle>{{event?.type}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{event.imageUrl}}" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          {{event?.content}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="accent">LIKE</button>
+        <button mat-raised-button color="accent">SHARE</button>
+      </mat-card-actions>
+    </a>
+    </mat-card>
+</ul>

@@ -1,13 +1,13 @@
-<mat-card *ngIf="news" class="example-card">
+<mat-card *ngIf="project" class="example-card">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>{{news.title}}</mat-card-title>
-      <mat-card-subtitle>{{news?.subtitle}}</mat-card-subtitle>
+      <mat-card-title>{{project.title}}</mat-card-title>
+      <mat-card-subtitle>{{project?.type}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="{{news.imageUrl}}" alt="Photo of a Shiba Inu">
+    <img mat-card-image src="{{project.imageUrl}}" alt="Photo of a Shiba Inu">
     <mat-card-content>
       <p>
-        {{news.content}}
+        {{project?.content}}
       </p>
     </mat-card-content>
     <mat-card-actions>

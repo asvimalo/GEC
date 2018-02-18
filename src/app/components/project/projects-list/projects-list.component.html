@@ -1,16 +1,16 @@
-<h2>Blogs</h2>
+<h2>Projects</h2>
 <ul>
-  <mat-card *ngFor="let blog of blogs" class="example-card">
-    <a  routerLink="/blog/{{blog.id}}">
+  <mat-card *ngFor="let project of projects" class="example-card">
+    <a  routerLink="/project/{{project.id}}">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>{{blog.title}}</mat-card-title>
-        <mat-card-subtitle>{{blog?.subtitle}}</mat-card-subtitle>
+        <mat-card-title>{{project.name}}</mat-card-title>
+        <mat-card-subtitle>{{project?.type}}</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="{{blog.imageUrl}}" alt="Photo of a Shiba Inu">
+      <img mat-card-image src="{{project.imageUrl}}" alt="Photo of a Shiba Inu">
       <mat-card-content>
         <p>
-          {{blog.content}}
+          {{project?.content}}
         </p>
       </mat-card-content>
       <mat-card-actions>
@@ -20,3 +20,4 @@
     </a>
     </mat-card>
 </ul>
+

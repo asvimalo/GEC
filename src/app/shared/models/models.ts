@@ -27,27 +27,38 @@ export class User {
     firstName: string;
     lastName: string;
     username: string;
-    isAdmin: boolean;
+    isAdmin?: boolean;
     isSuperAdmin: boolean;
     imageUrl?: string;
 }
 
 export class Project {
     id: number;
-    name: string;
-    dateStarted: Date;
-    dateFinished: Date;
-    volunteers: User[];
-}
-export class Event {
-    id: number;
-    name: string;
-    dateStarted: any;
-    dateFinished: any;
+    name?: string;
+    imageUrl?: string;
+    content?: string;
+    description?: string;
+    dateStarted?: any;
+    dateFinished?: any;
     created?: User[];
     sponsort?: string;
-    type: string;
-    description: string;
+    type?: string;
+    category?: string;
+    volunteers?: User[];
+}
+
+export class Event {
+    id: number;
+    name?: string;
+    imageUrl?: string;
+    content?: string;
+    description?: string;
+    dateStarted?: any;
+    dateFinished?: any;
+    created?: User[];
+    sponsort?: string;
+    type?: string;
+    category: string;
 }
 export class Blog implements IArticle {
     category: string;

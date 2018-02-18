@@ -8,6 +8,8 @@ import { BlogsListComponent } from './components/blog/blogs-list/blogs-list.comp
 import { MainComponent } from './components/main/main.component';
 import { EventsListComponent } from './components/event/events-list/events-list.component';
 import { EventDetailComponent } from './components/event/event-detail/event-detail.component';
+import { ProjectDetailComponent } from './components/project/project-detail/project-detail.component';
+import { ProjectsListComponent } from './components/project/projects-list/projects-list.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'gec', pathMatch: 'full' },
@@ -17,7 +19,9 @@ const routes: Routes = [
   { path: 'blog', component: BlogsListComponent },
   { path: 'blog/:id', component: BlogDetailComponent },
   { path: 'event', component: EventsListComponent },
-  { path: 'event/:id', component: EventDetailComponent }
+  { path: 'event/:id', component: EventDetailComponent },
+  { path: 'project', component: ProjectsListComponent },
+  { path: 'project/:id', component: ProjectDetailComponent }
 ];
 
 @NgModule({
