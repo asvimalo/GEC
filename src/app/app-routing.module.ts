@@ -10,6 +10,7 @@ import { EventsListComponent } from './components/event/events-list/events-list.
 import { EventDetailComponent } from './components/event/event-detail/event-detail.component';
 import { ProjectDetailComponent } from './components/project/project-detail/project-detail.component';
 import { ProjectsListComponent } from './components/project/projects-list/projects-list.component';
+import { LoginComponent } from './components/auth/login/login.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'gec', pathMatch: 'full' },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'event', component: EventsListComponent },
   { path: 'event/:id', component: EventDetailComponent },
   { path: 'project', component: ProjectsListComponent },
-  { path: 'project/:id', component: ProjectDetailComponent }
+  { path: 'project/:id', component: ProjectDetailComponent },
+  { path: 'login', component: LoginComponent }
 ];
 
 @NgModule({

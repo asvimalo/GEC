@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './shared/material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BlogAddComponent } from './components/blog/blog-add/blog-add.component';
@@ -26,6 +27,8 @@ import { EventService } from './shared/services/event/event.service';
 import { ProjectService } from './shared/services/project/project.service';
 import { ProjectDetailComponent } from './components/project/project-detail/project-detail.component';
 import { ProjectsListComponent } from './components/project/projects-list/projects-list.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { AuthService } from './shared/services/auth/auth.service';
 
 
 
@@ -47,10 +50,12 @@ import { ProjectsListComponent } from './components/project/projects-list/projec
     NewsDetailComponent,
     NewsListComponent,
     ProjectDetailComponent,
-    ProjectsListComponent
+    ProjectsListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     FormsModule,
     MaterialModule,
@@ -61,7 +66,8 @@ import { ProjectsListComponent } from './components/project/projects-list/projec
     NewsService,
     MessageService,
     EventService,
-    ProjectService
+    ProjectService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
