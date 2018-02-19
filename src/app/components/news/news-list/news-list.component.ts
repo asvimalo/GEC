@@ -16,10 +16,9 @@ export class NewsListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getBlogs();
+    this.getNews();
   }
-  getBlogs(): void {
-    // this.blogs = this.blogService.getBlogs();
+  getNews(): void {
     this.newsService.getNews()
       .subscribe(news => this.news = news);
   }
