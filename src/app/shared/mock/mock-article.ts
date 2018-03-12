@@ -1,4 +1,4 @@
-import { IArticle, Event, Project } from './../models/models';
+import { IArticle, Event, Project, User } from './../models/models';
 
 export const ARTICLES: IArticle[] = [
   {
@@ -232,4 +232,16 @@ export const PROJECTS: Project[] = [
         dateStarted: Date.now(),
         type: 'reconstruct nature',
         category: 'volunteer'
+}];
+export const USERS: User[] = [
+  {
+    id: 1,
+    firstname: 'Andrés',
+    lastname: 'mtz',
+    username: 'asvimalo',
+    email: 'as@as.com',
+    password: '1234',
+    isAdmin: true,
+    isSuperAdmin: true,
+    imageUrl: ''
 }];

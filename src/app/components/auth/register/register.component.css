@@ -1,9 +1,9 @@
 mat-card {
-    max-width: 400px;
+    max-width: 600px;
     margin: 4em auto;
     text-align: center;
   }
-  .signin-content {
+  .register-content {
     padding: 60px 1rem;
   }
   .full-width-input {

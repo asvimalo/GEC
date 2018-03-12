@@ -1,3 +1,54 @@
-<p>
-  blog-add works!
-</p>
+<div class="add-content">
+  <mat-card>
+    <mat-card-content>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <p>Create a Blog</p>
+        <mat-input-container class="full-width-input">
+          <input matInput placeholder="Title" 
+                 formControlName="title" required>
+          <mat-error *ngIf="isFieldInvalid('title')">
+            Please enter a title
+          </mat-error>
+        </mat-input-container>
+        <mat-input-container class="full-width-input">
+          <input matInput placeholder="Subtitle" 
+                 formControlName="subtitle" required>
+          <mat-error *ngIf="isFieldInvalid('subtitle')">
+            Please a subtitle for this blog
+          </mat-error>
+        </mat-input-container>
+        
+        <mat-input-container class="full-width-input">
+          <input matInput placeholder="Description..." 
+                 formControlName="description" required>
+          <mat-error *ngIf="isFieldInvalid('description')">
+            Please enter a description
+          </mat-error>
+        </mat-input-container>
+        <mat-input-container class="full-width-input">
+          <input matInput placeholder="imageUrl" 
+                 formControlName="imageUrl" required>
+          <mat-error *ngIf="isFieldInvalid('imageUrl')">
+            Please Upload a picture for this blog
+          </mat-error>
+        </mat-input-container>
+        <mat-input-container class="full-width-input">
+          <input matInput  placeholder="Content" 
+                 formControlName="content" required>
+          <mat-error *ngIf="isFieldInvalid('content')">
+            Please enter here the content of this blog
+          </mat-error>
+        </mat-input-container>
+        <mat-input-container class="full-width-input">
+          <input matInput placeholder="category" 
+                 formControlName="category" required>
+          <mat-error *ngIf="isFieldInvalid('category')">
+            Please enter category name
+          </mat-error>
+        </mat-input-container>
+        <button mat-raised-button color="primary" type="submit">Create blog</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+

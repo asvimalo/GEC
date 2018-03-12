@@ -24,12 +24,13 @@ export class Comment {
 
 export class User {
     id: number;
-    firstName?: string;
-    lastName?: string;
-    username?: string;
+    firstname?: string;
+    lastname?: string;
+    username: string;
+    email: string;
     password: string;
     isAdmin?: boolean;
-    isSuperAdmin: boolean;
+    isSuperAdmin?: boolean;
     imageUrl?: string;
 }
 

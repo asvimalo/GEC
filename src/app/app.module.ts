@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './shared/mock/in-memory-data.service';
+
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './shared/material/material.module';
@@ -29,6 +33,7 @@ import { ProjectDetailComponent } from './components/project/project-detail/proj
 import { ProjectsListComponent } from './components/project/projects-list/projects-list.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { AuthService } from './shared/services/auth/auth.service';
+import { RegisterComponent } from './components/auth/register/register.component';
 
 
 
@@ -51,10 +56,15 @@ import { AuthService } from './shared/services/auth/auth.service';
     NewsListComponent,
     ProjectDetailComponent,
     ProjectsListComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    ),
     ReactiveFormsModule,
     BrowserAnimationsModule,
     FormsModule,

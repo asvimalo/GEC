@@ -20,7 +20,7 @@ export class NewsListComponent implements OnInit {
   }
   getNews(): void {
     this.newsService.getNews()
-      .subscribe(news => this.news = news);
+      .subscribe(news => this.news = news.filter((newsart) => newsart.category === 'news'));
   }
 
 }

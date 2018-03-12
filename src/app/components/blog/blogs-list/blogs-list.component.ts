@@ -21,6 +21,6 @@ export class BlogsListComponent implements OnInit {
   getBlogs(): void {
     // this.blogs = this.blogService.getBlogs();
     this.blogService.getBlogs()
-      .subscribe(blogs => this.blogs = blogs);
+      .subscribe(blogs => this.blogs = blogs.filter((blog) => blog.category === 'blog'));
   }
 }
